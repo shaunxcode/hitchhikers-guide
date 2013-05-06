@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hitchhikers Guide to: Tokyo</title>
+<style>
+body {
+    font-family: helvetica;
+}
+
+.locationControl { 
+	display: inline-block;
+}
+label { 
+	display: inline-block;
+}
+
+label:after { 
+    content: ":";
+}
+
+.routes>div {
+	line-height: 1.5em;
+}
+
+h3, h4 { 
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.step {
+	border-radius: 5px;
+	padding: 5px;
+	width: 640px;
+}
+.step button {
+	visibility: hidden;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.pastStep {
+	color: #ccc;
+}
+
+.activeStep {
+	background: rgb(60, 131, 60);
+	color: #fff;
+}
+
+.step.activeStep button { 
+	visibility: visible;
+}
+
+.step > div { 
+	display: inline-block; 
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.step > div:before {content: "(";}
+.step > div:after {content: ")";}
+
+textarea {
+	width: 640px;
+	border-radius: 5px;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<div class="fromLocation">
+		<label>A</label>
+	    <div class="locationControl"></div>
+	</div>
+	<div class="toLocation">
+		<label>B</label>
+	    <div class="locationControl"></div>
+	</div>
+	<div class="map"></div>
+	<h3>Directions</h3>
+	<div class="routes"></div>
+	
+</body>
+<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+<script type="text/javascript" src="index.js"></script>
+</html>

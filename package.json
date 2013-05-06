@@ -1,0 +1,53 @@
+{
+	"name": "hitchhikers-guide",
+
+	"description": "offline travel plan generator",
+
+	"version": "0.0.1",
+
+	"keywords": ["travel", "maps"],
+
+	"maintainers": [{
+		"name": "Shaun Gilchrist",
+		"email": "shaunxcode@gmail.com",
+		"web": "http://order-of-no.posterous.com"
+	}], 
+
+	"contributors": [{
+		"name": "Shaun Gilchrist",
+		"email": "shaunxcode@gmail.com",
+		"web": "http://order-of-no.posterous.com"
+	}], 
+
+	"bugs": "http://www.github.com/shaunxcode/hitchhikers-guide/issues",
+
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/mit-license.php"
+	}],
+
+	"repositories": [{
+		"type": "git",
+		"url": "http://www.github.com/shaunxcode/hitchhikers-guide"
+	}],
+
+	"devDependencies": {
+		"coffee-subscript": "latest",
+		"underscore": "latest"
+	},
+
+	"dependencies": {
+		"underscore": "latest",
+		"commander": "latest", 
+		"googlemaps": "latest",
+		"queue-async": "latest",
+		"swedn": "latest",
+		"express": "latest"
+	},
+	
+	"bin": {
+		"hitchhikers-guide": "./bin/hitchhikers-guide"
+	},
+	
+	"main": "hitchhikers-guide.js"
+}
